@@ -2,4 +2,7 @@
   font-size: clamp(px,vw,px);
   font-size: calc( clamp(1.43px,0.19vw,2.14px) * (-1));
   background: url(../images/sign-up-bg.png) right no-repeat;
+  width: 75.5px;
+  height: 20px;
+  transform: translateY(-50%);
 }

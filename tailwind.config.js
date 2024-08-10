@@ -11,7 +11,8 @@ module.exports = {
         "dark-blue-gray": "#333A44",
         "light-gray-blue": "#939CAA",
         // "light-gray-blue": "##C6CDD2",
-        'bright-yellow-orange': '#FCB72B',
+        "bright-yellow-orange": "#FCB72B",
+        "cool-blue": "#E5ECF4",
       },
       minHeight: {
         "100dvh": "100dvh",

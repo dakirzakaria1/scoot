@@ -13,37 +13,114 @@
     <title>location</title>
   </head>
   <body class="min-h-100dvh max-w-100dvw">
-    <section class="bg-dark-navy bg-sign-up bg-no-repeat bg-right-bottom">
+    <div
+      id="overlay"
+      class="w-[100vw] h-[100vh] opacity-75 bg-black fixed inset-0 z-40 hidden"
+    ></div>
+    <header class="fixed w-full bg-white z-50">
       <div
-        class="my-container flex items-center justify-center gap-10 flex-wrap py-[clamp(88px,9.19vw,102px)] min-[778px]:justify-between"
+        class="my-container py-[22px] flex items-center justify-center min-[709px]:justify-between gap-14 flex-wrap relative"
       >
-        <h2
-          class="font-space-mono text-white text-[clamp(32px,4.32vw,48px)] font-bold leading-[clamp(32px,4.32vw,48px)] tracking-[calc(clamp(1.43px,0.19vw,2.14px)*(-1))] basis-[415px] text-center min-[778px]:text-left"
+        <button
+          id="menu-button"
+          class="min-[709px]:hidden absolute left-8 top-1/2 transform -translate-y-1/2 cursor-scoot"
+          aria-controls="menu"
+          aria-expanded="false"
         >
-          Sign up and Scoot off today
-        </h2>
-        <div class="flex items-center justify-center gap-4 flex-wrap">
-          <a
-            href="#"
-            aria-label="Download on the App Store"
-            class="cursor-scoot"
+          <img
+            id="menu-button-icon"
+            src="../images/icon-menu-open.svg"
+            alt="Menu"
+            class="w-5 h-4"
+          />
+        </button>
+        <div class="flex items-center gap-14">
+          <a href="../index.html" class="cursor-scoot">
+            <img
+              src="../images/main-logo.svg"
+              alt="Main Logo class="
+              class="w-[clamp(75px,9.73vw,108px)] h-[clamp(20px,2.52vw,28px)]"
+            />
+          </a>
+          <nav
+            id="menu"
+            class="absolute flex flex-col justify-between h-[calc(100vh_-_64px)] w-3/4 top-[64px] left-0 bg-dark-blue-gray px-8 pt-16 pb-6 min-[709px]:w-fit min-[709px]:-h-fit min-[709px]:bg-transparent min-[709px]:not-sr-only -translate-x-full transform transition-transform duration-300 z-50 min-[709px]:translate-x-0"
+            aria-labelledby="menu-button"
           >
-            <img
-              src="../images/app-store.svg"
-              alt="Download on the App Store"
-              class="w-[clamp(113px,14.32vw,159px)] h-[clamp(40px,5.05vw,56px)]"
-            />
-          </a>
-          <a href="#" aria-label="Get it on Google Play" class="cursor-scoot">
-            <img
-              src="../images/google-play.svg"
-              alt="Get it on Google Play"
-              class="w-[clamp(130px,16.40vw,182px)] h-[clamp(40px,5.05vw,56px)]"
-            />
-          </a>
+            <ul
+              class="flex flex-col items-start min-[709px]:items-center gap-y-6 gap-x-8 min-[709px]:flex-row"
+            >
+              <li>
+                <a
+                  href="./about.html"
+                  class="font-space-mono text-cool-blue min-[709px]:text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./location.html"
+                  class="font-space-mono text-bright-yellow-orange font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >Location</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./careers.html"
+                  class="font-space-mono text-cool-blue min-[709px]:text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="min-[709px]:hidden font-space-mono font-bold text-white text-center cursor-scoot bg-bright-yellow-orange border border-bright-yellow-orange py-[14px] px-[39px] hover:text-bright-yellow-orange hover:bg-transparent transition-all duration-300 ease-in-out"
+              aria-label="Get Scooting"
+              >Get Scooting</a
+            >
+          </nav>
         </div>
+        <a
+          href="#"
+          class="hidden min-[709px]:block font-space-mono font-bold text-white text-center cursor-scoot bg-bright-yellow-orange border border-bright-yellow-orange py-[14px] px-[39px] hover:text-bright-yellow-orange hover:bg-transparent transition-all duration-300 ease-in-out"
+          aria-label="Get Scooting"
+          >Get Scooting</a
+        >
       </div>
-    </section>
+    </header>
+    <main class="pt-16 min-[709px]:pt-[97px]">
+      <section class="bg-dark-navy bg-sign-up bg-no-repeat bg-right-bottom">
+        <div
+          class="my-container flex items-center justify-center gap-10 flex-wrap py-[clamp(88px,9.19vw,102px)] min-[778px]:justify-between"
+        >
+          <h2
+            class="font-space-mono text-white text-[clamp(32px,4.32vw,48px)] font-bold leading-[clamp(32px,4.32vw,48px)] tracking-[calc(clamp(1.43px,0.19vw,2.14px)*(-1))] basis-[415px] text-center min-[778px]:text-left"
+          >
+            Sign up and Scoot off today
+          </h2>
+          <div class="flex items-center justify-center gap-4 flex-wrap">
+            <a
+              href="#"
+              aria-label="Download on the App Store"
+              class="cursor-scoot"
+            >
+              <img
+                src="../images/app-store.svg"
+                alt="Download on the App Store"
+                class="w-[clamp(113px,14.32vw,159px)] h-[clamp(40px,5.05vw,56px)]"
+              />
+            </a>
+            <a href="#" aria-label="Get it on Google Play" class="cursor-scoot">
+              <img
+                src="../images/google-play.svg"
+                alt="Get it on Google Play"
+                class="w-[clamp(130px,16.40vw,182px)] h-[clamp(40px,5.05vw,56px)]"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="bg-dark-blue-gray">
       <div
         class="my-container pt-[64px] pb-[88px] flex flex-col items-center justify-between flex-wrap gap-[85px] min-[694px]:pt-[35px] min-[694px]:pb-[32px] min-[694px]:flex-row"
@@ -52,7 +129,7 @@
           class="flex flex-col items-center gap-x-14 gap-y-10 min-[694px]:flex-row"
         >
           <a href="../index.html">
-            <img src="../images/footer-logo.svg" alt="Footer Logo" />
+            <img src="../images/footer-logo.svg" alt="Footer Logo" class="w-[108px] h-[28px]"/>
           </a>
           <nav>
             <ul
@@ -154,5 +231,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../main.js"></script>
   </body>
 </html>
