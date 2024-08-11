@@ -19,7 +19,7 @@
     ></div>
     <header class="fixed w-full bg-white z-50">
       <div
-        class="my-container py-[22px] flex items-center justify-center min-[709px]:justify-between gap-14 flex-wrap relative"
+        class="my-container py-[22px] flex items-center justify-center min-[709px]:justify-between relative"
       >
         <button
           id="menu-button"
@@ -59,9 +59,9 @@
               </li>
               <li>
                 <a
-                  href="./location.html"
+                  href="./locations.html"
                   class="font-space-mono text-cool-blue min-[709px]:text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
-                  >Location</a
+                  >Locations</a
                 >
               </li>
               <li>
@@ -88,7 +88,12 @@
         >
       </div>
     </header>
-    <main class="pt-16 min-[709px]:pt-[97px]">
+    <main class="pt-16 min-[709px]:pt-[97px] overflow-x-hidden">
+      <section class="bg-about-hero bg-cover bg-center bg-no-repeat relative after:content-[url(../images/hero-float-icons.svg)] after:hidden after:absolute after:top-2/4 after:-right-8 after:transform after:-translate-y-2/4 min-[709px]:after:block">
+        <div class="my-container py-[clamp(60px,6.48vw,72px)]">
+          <h1 class="font-space-mono text-center text-white font-bold text-[clamp(40px,5.04vw,56px)] tracking-[calc(clamp(1.79px,0.22vw,2.5px)*(-1))] min-[709px]:text-left">About</h1>
+        </div>
+      </section>
       <section class="bg-dark-navy bg-sign-up bg-no-repeat bg-right-bottom">
         <div
           class="my-container flex items-center justify-center gap-10 flex-wrap py-[clamp(88px,9.19vw,102px)] min-[778px]:justify-between"
@@ -128,7 +133,7 @@
         <div
           class="flex flex-col items-center gap-x-14 gap-y-10 min-[694px]:flex-row"
         >
-          <a href="../index.html">
+          <a href="../index.html" class="cursor-scoot">
             <img src="../images/footer-logo.svg" alt="Footer Logo" class="w-[108px] h-[28px]"/>
           </a>
           <nav>
@@ -144,9 +149,9 @@
               </li>
               <li>
                 <a
-                  href="./location.html"
+                  href="./locations.html"
                   class="font-space-mono text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
-                  >Location</a
+                  >Locations</a
                 >
               </li>
               <li>

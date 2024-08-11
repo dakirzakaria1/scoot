@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/output.css" />
+    <title>location</title>
+  </head>
+  <body class="min-h-100dvh max-w-100dvw">
+    <div
+      id="overlay"
+      class="w-[100vw] h-[100vh] opacity-75 bg-black fixed inset-0 z-40 hidden"
+    ></div>
+    <header class="fixed w-full bg-white z-50">
+      <div
+        class="my-container py-[22px] flex items-center justify-center min-[709px]:justify-between relative"
+      >
+        <button
+          id="menu-button"
+          class="min-[709px]:hidden absolute left-8 top-1/2 transform -translate-y-1/2 cursor-scoot"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <img
+            id="menu-button-icon"
+            src="../images/icon-menu-open.svg"
+            alt="Menu"
+            class="w-5 h-4"
+          />
+        </button>
+        <div class="flex items-center gap-14">
+          <a href="../index.html" class="cursor-scoot">
+            <img
+              src="../images/main-logo.svg"
+              alt="Main Logo class="
+              class="w-[clamp(75px,9.73vw,108px)] h-[clamp(20px,2.52vw,28px)]"
+            />
+          </a>
+          <nav
+            id="menu"
+            class="absolute flex flex-col justify-between h-[calc(100vh_-_64px)] w-3/4 top-[64px] left-0 bg-dark-blue-gray px-8 pt-16 pb-6 min-[709px]:w-fit min-[709px]:-h-fit min-[709px]:bg-transparent min-[709px]:not-sr-only -translate-x-full transform transition-transform duration-300 z-50 min-[709px]:translate-x-0"
+            aria-labelledby="menu-button"
+          >
+            <ul
+              class="flex flex-col items-start min-[709px]:items-center gap-y-6 gap-x-8 min-[709px]:flex-row"
+            >
+              <li>
+                <a
+                  href="./about.html"
+                  class="font-space-mono text-cool-blue min-[709px]:text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./locations.html"
+                  class="font-space-mono text-bright-yellow-orange font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./careers.html"
+                  class="font-space-mono text-cool-blue min-[709px]:text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="min-[709px]:hidden font-space-mono font-bold text-white text-center cursor-scoot bg-bright-yellow-orange border border-bright-yellow-orange py-[14px] px-[39px] hover:text-bright-yellow-orange hover:bg-transparent transition-all duration-300 ease-in-out"
+              aria-label="Get Scooting"
+              >Get Scooting</a
+            >
+          </nav>
+        </div>
+        <a
+          href="#"
+          class="hidden min-[709px]:block font-space-mono font-bold text-white text-center cursor-scoot bg-bright-yellow-orange border border-bright-yellow-orange py-[14px] px-[39px] hover:text-bright-yellow-orange hover:bg-transparent transition-all duration-300 ease-in-out"
+          aria-label="Get Scooting"
+          >Get Scooting</a
+        >
+      </div>
+    </header>
+    <main class="pt-16 min-[709px]:pt-[97px] overflow-x-hidden">
+      <section class="bg-locations-hero bg-cover bg-center bg-no-repeat relative after:content-[url(../images/hero-float-icons.svg)] after:hidden after:absolute after:top-2/4 after:-right-8 after:transform after:-translate-y-2/4 min-[709px]:after:block">
+        <div class="my-container py-[clamp(60px,6.48vw,72px)]">
+          <h1 class="font-space-mono text-center text-white font-bold text-[clamp(40px,5.04vw,56px)] tracking-[calc(clamp(1.79px,0.22vw,2.5px)*(-1))] min-[709px]:text-left">Locations</h1>
+        </div>
+      </section>
+      <section class="bg-dark-navy bg-sign-up bg-no-repeat bg-right-bottom">
+        <div
+          class="my-container flex items-center justify-center gap-10 flex-wrap py-[clamp(88px,9.19vw,102px)] min-[778px]:justify-between"
+        >
+          <h2
+            class="font-space-mono text-white text-[clamp(32px,4.32vw,48px)] font-bold leading-[clamp(32px,4.32vw,48px)] tracking-[calc(clamp(1.43px,0.19vw,2.14px)*(-1))] basis-[415px] text-center min-[778px]:text-left"
+          >
+            Sign up and Scoot off today
+          </h2>
+          <div class="flex items-center justify-center gap-4 flex-wrap">
+            <a
+              href="#"
+              aria-label="Download on the App Store"
+              class="cursor-scoot"
+            >
+              <img
+                src="../images/app-store.svg"
+                alt="Download on the App Store"
+                class="w-[clamp(113px,14.32vw,159px)] h-[clamp(40px,5.05vw,56px)]"
+              />
+            </a>
+            <a href="#" aria-label="Get it on Google Play" class="cursor-scoot">
+              <img
+                src="../images/google-play.svg"
+                alt="Get it on Google Play"
+                class="w-[clamp(130px,16.40vw,182px)] h-[clamp(40px,5.05vw,56px)]"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark-blue-gray">
+      <div
+        class="my-container pt-[64px] pb-[88px] flex flex-col items-center justify-between flex-wrap gap-[85px] min-[694px]:pt-[35px] min-[694px]:pb-[32px] min-[694px]:flex-row"
+      >
+        <div
+          class="flex flex-col items-center gap-x-14 gap-y-10 min-[694px]:flex-row"
+        >
+          <a href="../index.html" class="cursor-scoot">
+            <img src="../images/footer-logo.svg" alt="Footer Logo" class="w-[108px] h-[28px]"/>
+          </a>
+          <nav>
+            <ul
+              class="flex flex-col items-center gap-x-8 gap-y-4 min-[694px]:flex-row"
+            >
+              <li>
+                <a
+                  href="./about.html"
+                  class="font-space-mono text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./locations.html"
+                  class="font-space-mono text-bright-yellow-orange font-bold transition-colors duration-300 ease-in-out cursor-scoot"
+                  >Locations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./careers.html"
+                  class="font-space-mono text-light-gray-blue font-bold transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="flex items-center gap-6">
+          <li>
+            <a
+              href="#"
+              class="text-2xl text-light-gray-blue transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+              aria-label="Facebook"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20 20 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-2xl text-light-gray-blue transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+              aria-label="Twitter"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-2xl text-light-gray-blue transition-colors duration-300 ease-in-out hover:text-bright-yellow-orange cursor-scoot"
+              aria-label="Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  color="currentColor"
+                >
+                  <path
+                    d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+                  />
+                  <path
+                    d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01"
+                  />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../main.js"></script>
+  </body>
+</html>

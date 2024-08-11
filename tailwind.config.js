@@ -5,6 +5,12 @@ module.exports = {
     extend: {
       backgroundImage: {
         "sign-up": "url(../images/sign-up-bg.png)",
+        "about-hero": "url(../images/about/hero-bg.png)",
+        "careers-hero": "url(../images/careers/hero-bg.png)",
+        "locations-hero": "url(../images/locations/hero-bg.png)",
+        "join-card-1": "url(../images/careers/join-card-1.svg)",
+        "join-card-2": "url(../images/careers/join-card-2.svg)",
+        "join-card-3": "url(../images/careers/join-card-3.svg)",
       },
       colors: {
         "dark-navy": "#495567",
