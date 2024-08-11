@@ -8,17 +8,17 @@ module.exports = {
         "sign-up": "url(../images/sign-up-bg.png)",
         // About Page:
         "about-hero": "url(../images/about/hero-bg.png)",
-        "value-card-1": "url(../images/about/value-card-1.svg)",
-        "value-card-2": "url(../images/about/value-card-2.svg)",
-        "value-card-3": "url(../images/about/value-card-3.svg)",
+        "value-card-1": "url(../images/about/value-card-1.webp)",
+        "value-card-2": "url(../images/about/value-card-2.webp)",
+        "value-card-3": "url(../images/about/value-card-3.webp)",
         // Locations Page:
         "locations-hero": "url(../images/locations/hero-bg.png)",
         // Careers Page:
         "careers-hero": "url(../images/careers/hero-bg.png)",
-        "care-image": "url(../images/careers/care-image.svg)",
-        "join-card-1": "url(../images/careers/join-card-1.svg)",
-        "join-card-2": "url(../images/careers/join-card-2.svg)",
-        "join-card-3": "url(../images/careers/join-card-3.svg)",
+        "care-image": "url(../images/careers/care-image.webp)",
+        "join-card-1": "url(../images/careers/join-card-1.webp)",
+        "join-card-2": "url(../images/careers/join-card-2.webp)",
+        "join-card-3": "url(../images/careers/join-card-3.webp)",
       },
       colors: {
         "dark-navy": "#495567",
