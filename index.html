@@ -10,7 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/output.css" />
-    <title>home</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg">
+    <title>Scoot - Home</title>
   </head>
   <body class="min-h-100dvh max-w-100dvw">
     <div
@@ -128,12 +129,12 @@
         <div
           class="flex flex-col items-center gap-x-14 gap-y-10 min-[694px]:flex-row"
         >
-          <a href="./index.html" class="cursor-scoot">
+          <a href="./index.html" class="cursor-scoot" aria-label="Go to homepage">
             <img src="./images/footer-logo.svg" alt="Footer Logo" class="w-[108px] h-[28px]"/>
           </a>
-          <nav>
+          <nav aria-label="Footer navigation">
             <ul
-              class="flex flex-col items-center gap-x-8 gap-y-4 min-[694px]:flex-row"
+              class="flex flex-col items-center gap-x-8 gap-y-4 min-[694px]:flex-row"  role="list"
             >
               <li>
                 <a
@@ -159,7 +160,7 @@
             </ul>
           </nav>
         </div>
-        <ul class="flex items-center gap-6">
+        <ul class="flex items-center gap-6" role="list">
           <li>
             <a
               href="#"
