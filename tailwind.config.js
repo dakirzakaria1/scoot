@@ -15,6 +15,7 @@ module.exports = {
         "locations-hero": "url(../images/locations/hero-bg.png)",
         // Careers Page:
         "careers-hero": "url(../images/careers/hero-bg.png)",
+        "care-image": "url(../images/careers/care-image.svg)",
         "join-card-1": "url(../images/careers/join-card-1.svg)",
         "join-card-2": "url(../images/careers/join-card-2.svg)",
         "join-card-3": "url(../images/careers/join-card-3.svg)",
