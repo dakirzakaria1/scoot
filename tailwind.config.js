@@ -4,10 +4,17 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        // All Pages
         "sign-up": "url(../images/sign-up-bg.png)",
+        // About Page:
         "about-hero": "url(../images/about/hero-bg.png)",
-        "careers-hero": "url(../images/careers/hero-bg.png)",
+        "value-card-1": "url(../images/about/value-card-1.svg)",
+        "value-card-2": "url(../images/about/value-card-2.svg)",
+        "value-card-3": "url(../images/about/value-card-3.svg)",
+        // Locations Page:
         "locations-hero": "url(../images/locations/hero-bg.png)",
+        // Careers Page:
+        "careers-hero": "url(../images/careers/hero-bg.png)",
         "join-card-1": "url(../images/careers/join-card-1.svg)",
         "join-card-2": "url(../images/careers/join-card-2.svg)",
         "join-card-3": "url(../images/careers/join-card-3.svg)",
