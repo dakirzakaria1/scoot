@@ -1,0 +1,32 @@
+/* Hero */
+.hero {
+  background: linear-gradient(var(--dark-sapphire), var(--dark-sapphire)),
+    url(../images/about/hero-bg.png) center/cover no-repeat;
+  position: relative;
+}
+.hero::after {
+  content: url(../images/about/hero-image.png);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-container {
+  padding-block: clamp(60px, 5.58vw, 62px) clamp(60px, 7.38vw, 82px);
+}
+.hero-container h1 {
+  color: var(--white);
+  font-size: clamp(40px, 4.68vw, 52px);
+  line-height: clamp(40px, 4.68vw, 52px);
+  letter-spacing: clamp(-1.79px, -0.22vw, -2.5px);
+}
+
+/* Media Queries */
+@media (width < 754px) {
+  .hero::after {
+    display: none;
+  }
+  .hero-container h1 {
+    text-align: center;
+  }
+}
