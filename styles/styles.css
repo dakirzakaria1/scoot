@@ -272,7 +272,7 @@ main {
     font-size: 18px;
   }
   .header-container .nav-menu .primary-button {
-    display: block;
+    display: block !important;
   }
   .header-container .primary-button:last-child {
     display: none;
