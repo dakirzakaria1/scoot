@@ -44,15 +44,6 @@ body {
   height: 240px;
   border-radius: 50%;
 }
-.join-us .card:nth-child(1) .card-image {
-  background: url(../images/careers/join-card-1.svg) center/cover no-repeat;
-}
-.join-us .card:nth-child(2) .card-image {
-  background: url(../images/careers/join-card-2.svg) center/cover no-repeat;
-}
-.join-us .card:nth-child(3) .card-image {
-  background: url(../images/careers/join-card-3.svg) center/cover no-repeat;
-}
 .join-us .card-image::after {
   counter-increment: join-card-img;
   content: "0" counter(join-card-img) "";
